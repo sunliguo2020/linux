@@ -15,7 +15,8 @@ else
   Pwd=$1
 fi
 #echo $Pwd
-for i in $(ls $Pwd); do
+for i in `ls $Pwd`
+do
   if [ -d $Pwd/$i ]; then
     echo -ne "$i: \t"
     #printf "$i:\t%d"
